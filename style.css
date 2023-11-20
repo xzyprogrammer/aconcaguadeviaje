@@ -353,3 +353,47 @@ display: block;
     text-align: center;
     vertical-align: middle;
 }
+
+
+.dobleColumna{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.valoracion-item{
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.titulo-valoracion{
+    padding: 10px;
+    font-size: 28px;
+    border-bottom: 2px solid #333;
+    color: white !important;
+    background-color: #3498DB !important;
+}
+
+.comentario-valoracion{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.tipo-feedback-valoracion{
+    padding-left: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.valoracion-card {
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formularioValoracion{
+    background-color: #0766AD;
+    align-self: center;
+    height: 600px;
+    max-height: 450px;
+    width: 95%;
+    border-radius: 10px;
+}
