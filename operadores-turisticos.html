@@ -15,7 +15,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          min-height: 100vh;
+          min-height: 80vh;
           margin: 0;
         }
     
@@ -24,6 +24,7 @@
           display: flex;
           flex-wrap: wrap;
           gap: 10px;
+          margin-top: -100px;
         }
     
         .card {
@@ -105,9 +106,10 @@
             <h2>Operadores turísticos</h2>
             <p>Los operadores del valle de aconcagua tienen un sin fin de actividades para ofrecer turismo aventura,</p>
             <p>turismo cultural y de intereses especiales.</p>
+            
         </div>
-        <div style="width: 100%; text-align: end;">
-            <button class="btnFilter" data-bs-toggle="modal" data-bs-target="#modalFiltro"><img src="./icons/filter.svg" alt="">Filtrar</button>
+        <div style="width: 95%; text-align: end;">
+            <button class="btnFilter" data-bs-toggle="modal" data-bs-target="#modalFiltro">Filtrar<img src="./icons/filter.svg" style="margin-left: 5px;" alt=""></button>
         </div>
         <div class="bodyContainer">
             <div class="modal fade" id="modalFiltro" tabindex="-1" aria-labelledby="modalFiltroLabel" aria-hidden="true">
@@ -153,39 +155,39 @@
             </div>
 
             <div class="card-container">
-                <div class="card" style="background-image: url('./assets/1.jpg');">
+                <div class="card" style="background-image: url('./assets/escalada.jpg');">
                   <div class="card-text">Texto de la tarjeta 1</div>
-                  <div class="card-textOn">VALLE DEL SOL</div>
+                  <div class="card-textOn">ESCALADA - SAN FELIPE</div>
                 </div>
-                <div class="card" style="background-image: url('./assets/2.jpg');">
+                <div class="card" style="background-image: url('./assets/ciclismo-turismo-de-aventura.jpg');">
                   <div class="card-text">Texto de la tarjeta 2</div>
-                  <div class="card-textOn">VALLE DEL SOL</div>
+                  <div class="card-textOn">cICLISMO - LOS ANDES</div>
                 </div>
-                <div class="card" style="background-image: url('./assets/3.jpg');">
+                <div class="card" style="background-image: url('./assets/alpinismo-turismo-de-avenura.jpg');">
                   <div class="card-text">Texto de la tarjeta 3</div>
-                  <div class="card-textOn">VALLE DEL SOL</div>
+                  <div class="card-textOn">ALPINISMO - PUTAENDO</div>
                 </div>
-                <div class="card" style="background-image: url('./assets/4.jpg');">
+                <div class="card" style="background-image: url('./assets/practicando-cabalgata.jpg');">
                   <div class="card-text">Texto de la tarjeta 4</div>
-                  <div class="card-textOn">VALLE DEL SOL</div>
+                  <div class="card-textOn">CABALGATA - SAN FELIPE</div>
                 </div>
-                <div class="card" style="background-image: url('./assets/5.jpg');">
+                <div class="card" style="background-image: url('./assets/turismo-aventura.jpg');">
                   <div class="card-text">Texto de la tarjeta 5</div>
-                  <div class="card-textOn">VALLE DEL SOL</div>
-                </div>
-                <div class="card" style="background-image: url('./assets/6.jpg');">
-                  <div class="card-text">Texto de la tarjeta 6</div>
-                  <div class="card-textOn">VALLE DEL SOL</div>
+                  <div class="card-textOn">CAMINATA - PUTAENDO</div>
                 </div>
               </div>
 
         </div>
-        <div class="footerContainer">
-
-        </div>
-       
     </div>
-
+    <div class="footerContainerIndex">
+        <div class="footerImg"> 
+          <img src="./assets/footerImg.png" width="150" alt="">
+        </div>
+        <div class="footerText">
+          <p>ACONCAGUA DE VIAJE</p>
+          <span>©2023</span>
+        </div>
+    </div>
    
     
 
