@@ -15,6 +15,7 @@
     <title>Aconcagua de viaje</title>
     <link rel="stylesheet" href="style.css">
     <script src="scriptIndex.js"></script>
+    <script src="scriptServicios.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
@@ -27,7 +28,7 @@
             <div class="opcionesNavbar">
                 <a href="#">Inicio</a>
                 <div class="dropdown">
-                  <button class="dropbtn"><a href="#">Servicio</a></button>
+                  <button class="dropbtn"><a href="#">Servicios</a></button>
                   <div class="dropdown-content">
                   <a href="./restaurantes.html">Restaurantes</a>
                   <a href="./operadores-turisticos.html">Operadores turísticos</a>
@@ -64,11 +65,11 @@
                   <div class="card">
                     <img src="./assets/card1.jpg" height="300" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">PARQUE ANDINO JUNCAL</h5>
-                      <span style="color: gray; width: 100%; place-content: center;margin-top: -15px; padding-bottom: 5px;" class="row">Trekking</span>
+                      <h5 class="card-title">SITIO RAMSAR PARQUE ANDINO JUNCAL</h5>
+                      <span style="color: gray; width: 100%; place-content: center;margin-top: -10px; padding-bottom: 10px;" class="row">Senderismo - Montañismo</span>
                       <button class="btnCard btnCorto"><img src="./icons/geo-alt-fill.svg"/>Google Maps</button>
-                      <p class="card-text">Recorrer montañas nevadas es lo máximo</p>
-                      
+                      <p class="card-text" id="plusIndex1">Representa dos tercios de la cuenca del río Juncal, y esta en el pie del Glaciar Juncal. En la propiedad hay aproximadamente 24 glaciares, <a onclick="desplegarTexto('plusIndex1','textIndex1')" style="cursor: pointer; text-decoration: underline;">Ver más...</a></p>
+                      <p class="card-text" style="display: none;" id="textIndex1">Representa dos tercios de la cuenca del río Juncal, y esta en el pie del Glaciar Juncal. En la propiedad hay aproximadamente 24 glaciares, a lo menos seis humedales de importancia, y numerosas fuentes de agua prístina. Por estas razones en 2010 fue otorgado la categoría de protección Ramsar, el protocolo internacional para la protección de humedales.</p>
                     </div>
                   </div>
                 </div>
@@ -76,10 +77,11 @@
                   <div class="card">
                     <img src="./assets/card2.JPG" height="300" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">PARQUE RIO BLANCO</h5>
-                      <span style="color: gray; width: 100%; place-content: center;margin-top: -15px; padding-bottom: 5px;" class="row">Montañismo</span>
+                      <h5 class="card-title">SANTUARIO DE LA NATURALEZA EL ZAINO - LAGUNA EL COPIN</h5>
+                      <span style="color: gray; width: 100%; place-content: center;margin-top: -10px; padding-bottom: 10px;"class="row">Montañismo</span>
                       <button class="btnCard btnCorto"><img src="./icons/geo-alt-fill.svg"/>Google Maps</button>
-                      <p class="card-text">Escalar montañas es lo máximo</p>
+                      <p class="card-text" id="plusIndex2">En el área registran evidencias arqueológicas de origen incaico, representadas por numerosos petroglifos emplazados en el cerro <a onclick="desplegarTexto('plusIndex2','textIndex2')" style="cursor: pointer; text-decoration: underline;">Ver más...</a></p>
+                      <p class="card-text" style="display: none;" id="textIndex2">En el área registran evidencias arqueológicas de origen incaico, representadas por numerosos petroglifos emplazados en el cerro El Zaino y presencia de cerámica del período Alfarero Temprano. Asimismo, se ha establecido la presencia de al menos 28 ocupaciones humanas diferentes de los periodos Alfarero Temprano, Prehispánico, Arcaico, entre otros.</p>
                     </div>
                     
                   </div>
@@ -88,10 +90,11 @@
                   <div class="card">
                     <img src="./assets/card3.jpg" height="300" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">PARQUE ANDINO JUNCAL</h5>
-                      <span style="color: gray; width: 100%; place-content: center;margin-top: -15px; padding-bottom: 5px;" class="row">Senderismo</span>
+                      <h5 class="card-title">S.N Serrania el Ciprés</h5>
+                      <span style="color: gray; width: 100%; place-content: center;margin-top: -10px; padding-bottom: 10px;" class="row">Senderismo</span>
                       <button class="btnCard btnCorto"><img src="./icons/geo-alt-fill.svg"/>Google Maps</button>
-                      <p class="card-text">Recorrer campos es lo máximo</p>
+                      <p class="card-text" id="plusIndex3">En el Valle de Aconcagua en la Provincia de San Felipe se encuentra el Santuario de la Naturaleza Serranía el Ciprés, perteneciente al territorio <a onclick="desplegarTexto('plusIndex3','textIndex3')" style="cursor: pointer; text-decoration: underline;">Ver más...</a></p>
+                      <p class="card-text" style="display: none;" id="textIndex3">En el Valle de Aconcagua en la Provincia de San Felipe se encuentra el Santuario de la Naturaleza Serranía el Ciprés, perteneciente al territorio del Asiento en las faldas del cerro Tabaco, su cumbre alcanza los 2.342 m.s.n.m. Acá podrás encontrar ejemplares de la especie de Ciprés Cordillerano (Austrocedrus Chilensis) especie que es endémica de los bosques subantárticos.</p>
                     </div>
                    
                   </div>
