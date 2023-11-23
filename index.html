@@ -46,11 +46,11 @@
         <h2>VALLE DE</h2>
         <h3>ACONCAGUA</h3>
         <span>Ven a recorrer los diversos sitios naturales y culturales del valle, donde podrás conectar con lo esencial, respirar lo natural, viajar hacia la historia de los antepasados y sentir la emoción de la aventura y el montañismo.</span>
-        <button>VER DESTINOS</button>
+        <button><a href="#cardsDestinos" style="text-decoration: none; color: white">VER DESTINOS</a></button>
     </div>
 
       <div class="infoContainer">
-            <div class="headerInfoContainer">
+            <div class="headerInfoContainer" id="cardsDestinos">
                 <div>
                   <h2>DESTINOS POPULARES</h2>
                   <p>Descubre la variedad de sitios increíbles que el valle tiene para ofrecer</p>
@@ -59,7 +59,7 @@
                   <button class="btnNormal">Conocer más</button>
                 </div>
             </div>
-            <div class="contentInfoContainer">
+            <div class="contentInfoContainer" >
               <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                   <div class="card">
@@ -83,7 +83,6 @@
                       <p class="card-text" id="plusIndex2">En el área registran evidencias arqueológicas de origen incaico, representadas por numerosos petroglifos emplazados en el cerro <a onclick="desplegarTexto('plusIndex2','textIndex2')" style="cursor: pointer; text-decoration: underline;">Ver más...</a></p>
                       <p class="card-text" style="display: none;" id="textIndex2">En el área registran evidencias arqueológicas de origen incaico, representadas por numerosos petroglifos emplazados en el cerro El Zaino y presencia de cerámica del período Alfarero Temprano. Asimismo, se ha establecido la presencia de al menos 28 ocupaciones humanas diferentes de los periodos Alfarero Temprano, Prehispánico, Arcaico, entre otros.</p>
                     </div>
-                    
                   </div>
                 </div>
                 <div class="col">
@@ -121,10 +120,11 @@
           <div class="footerContainerIndex">
               <div class="footerImg"> 
                 <img src="./assets/footerImg.png" width="150" alt="">
+                <img src="./assets/ojos_de_agua_chile.png" width="180" alt="">
               </div>
               <div class="footerText">
-                <p>ACONCAGUA DE VIAJE</p>
-                <span>©2023</span>
+                <p>ACONCAGUA DE VIAJE <span>©2023</span></p>
+                <span>B. Pérez | V. Pizarro</span>
               </div>
           </div>
           <!-- Flexbox container for aligning the toasts -->
@@ -150,7 +150,7 @@
 <div class="modal fade" id="modalValoracion" tabindex="-1" aria-labelledby="modalValoracionLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="modal-header" style="background-color: #3498DB;color: white; font-size: 16px;">
+            <div class="modal-header" style="background-color: #3A8F9B;color: white; font-size: 16px;">
                 <h5 class="modal-title" id="modalValoracionLabel">Valoración</h5>
                 <button type="button" id="btnCerrarModalValoracion" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
             </div>
@@ -172,7 +172,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                <button type="button" class="btn btn-primary" style="background-color: #3498DB;color: white">Enviar valoración</button>
+                <button type="button" class="btn btn-primary" style="background-color: #3A8F9B;color: white">Enviar valoración</button>
             </div>
         </div>
     </div>
