@@ -32,13 +32,30 @@
         </div>
     </div>
     <div class="dobleColumna" style="padding-top: 120px;">
-        <div class="valoracionesContainer" id="valoracionesContainer" style="margin-top: -15px;">
+        <div class="valoracionesContainer" id="valoracionesContainer" style="margin-top: -15px;max-height: 460px; overflow-y: auto;">
         </div>
 
-        <div class="formularioValoracion">
+        <div class="formularioValoracion" style=" margin-left: 20px;">
                 <div style="width: 100%; text-align: center; padding: 15px; color:white;">
                     <h4>AYÚDANOS CON TU OPINIÓN</h4>
                 </div>
+                <form style="padding: 30px">
+                  <div class="mb-3">
+                      <label for="tipoFeedback" class="form-label">Categoría</label>
+                      <select class="form-select" id="tipoFeedback" required>
+                          <option value="" disabled selected>Selecciona una opción</option>
+                          <option value="Destino turístico">Destino turístico</option>
+                          <option value="Sitio web">Sitio web</option>
+                      </select>
+                  </div>
+                  <div class="mb-3">
+                      <label for="comentario" class="form-label">Comentario:</label>
+                      <textarea id="comentario" class="form-control" style="height:150px"></textarea>
+                  </div>
+                  <div style="text-align: end;">
+                    <button type="button" id="sendValoracion" class="btn btn-primary" style="background-color: white;color: #3A8F9B; border: none; width: 200px;">Enviar valoración</button>
+                  </div>
+              </form>
         </div>
 
       </div>

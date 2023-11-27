@@ -9,6 +9,10 @@ document.addEventListener('DOMContentLoaded', function () {
     enviarValoracionBtn.addEventListener('click', function () {
         var tipoFeedback = document.querySelector('#tipoFeedback').value;
         var comentario = document.querySelector('#comentario').value;
+        if(tipoFeedback == '' || comentario == ''){
+            alert('Falta ingresar datos de valoración.');
+            return
+        }
         var valoracionData = {
             tipoFeedback: tipoFeedback,
             comentario: comentario,

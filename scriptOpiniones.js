@@ -1,5 +1,24 @@
 document.addEventListener('DOMContentLoaded', function () {
         mostrarValoraciones();
+
+        var enviarValoracionBtn = document.getElementById("sendValoracion");
+        enviarValoracionBtn.addEventListener('click', function () {
+            
+            var tipoFeedback = document.querySelector('#tipoFeedback').value;
+            var comentario = document.querySelector('#comentario').value;
+            if(tipoFeedback == '' || comentario == ''){
+                alert('Falta ingresar datos de valoración.');
+                return
+            }
+            var valoracionData = {
+                tipoFeedback: tipoFeedback,
+                comentario: comentario,
+                fecha: new Date().toISOString() 
+            };
+    
+            almacenarValoracion(valoracionData);
+            window.location.reload();
+        })
     });
 
     function mostrarValoraciones() {
@@ -31,3 +50,12 @@ document.addEventListener('DOMContentLoaded', function () {
             valoracionesContainer.appendChild(card);
         }
     }
+
+    
+function almacenarValoracion(valoracionData) {
+    var valoraciones = JSON.parse(localStorage.getItem('valoraciones')) || [];
+    valoraciones.push(valoracionData);
+    localStorage.setItem('valoraciones', JSON.stringify(valoraciones));
+    
+    }
+    
