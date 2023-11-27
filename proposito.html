@@ -14,6 +14,21 @@
         .container{
             height: 100vh;
         }
+        .imgCircular{
+            border-radius: 50%;
+            max-width: 200px;
+            
+        }
+
+        .divImgCircular{
+            margin-right: 30px;
+        }
+        .divImgCircular p{
+            
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: 700;
+        }
     </style>
 </head>
 <body>
@@ -40,7 +55,29 @@
         </div>
     </div>
     <div class="container">
-        <h1>CUAL ES NUESTRO PROPÓSITO</h1>
+        <div class="headerContainer">
+            <h2>Nuestro propósito</h2>
+            <p>Aquí descubrirás la pasión que nos impulsa a preservar y proteger los destinos que exploramos contigo.</p>
+            <p> Nos esforzamos por promover prácticas de turismo ecológico, respetando la biodiversidad y las comunidades locales. </p>
+            <p>Únete a nosotros en este viaje, donde cada paso cuenta hacia un mundo más sostenible y armonioso. ¡Juntos, creamos recuerdos significativos mientras cuidamos el hogar que compartimos!</p>
+            
+        </div>
+        <div class="headerContainer" style="text-align: center;">
+            <h2 style="font-size: 36px;">Más sobre nosotros</h2>
+            <h3 style="padding-bottom: 20px;">Equipo</h3>
+            <div style="display: flex;justify-content: center; text-align: center;">
+                
+                <div class="divImgCircular">
+                    <img src="./assets/perfil1.jpg" alt="" class="imgCircular">
+                    <p>Bastián Pérez</p>
+                </div>
+                <div class="divImgCircular">
+                    <img src="./assets/perfil1.jpg" alt="" class="imgCircular">
+                    <p>Valeria Pizarro</p>
+                </div>
+            </div>
+            
+        </div>
     </div>
     <div class="footerContainerIndex">
         <div class="footerImg"> 
@@ -52,5 +89,8 @@
           <span>B. Pérez | V. Pizarro</span>
         </div>
     </div>
+
+
+    
 </body>
 </html>
